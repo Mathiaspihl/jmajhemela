@@ -1,0 +1,995 @@
+<!--
+=========================================================
+* Material Kit 2 - v3.0.0
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+DOCUMENTATION: https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+
+<!-- 
+              SEARCH IMAGES HERE:
+              ===================
+              https://unsplash.com/s/photos/live-music
+
+
+              Google Fonts Here:
+              ==================
+              https://fonts.google.com/icons
+              
+              Example:
+              <i class="material-icons">face</i>
+ -->
+
+
+
+<!-- 
+  ------------------------------
+  STANDARDS: Different links:
+    1) Generic external link 
+    2) PDF document link
+    3) External PDF link only - NOTE: SHIFT+ALT+T
+  ------------------------------  
+
+  <p>Newspaper: <a title="PDF file" target="_blank" href="https://www.mathiaspihl.com" class="text-dark font-weight-bolder icon-move-right">Doelstelling <i class="fas fa-arrow-right text-sm ms-1"></i></a></p>
+  <p>Infobrochure: <a title="PDF file" target="_blank" href="https://www.jmajhemela.eu/documents/Flyer%20Info.pdf" class="text-dark font-weight-bolder icon-move-right">Doelstelling <i class="far fa-file-pdf text-lg ms-1"></i></a></p>
+  <a title="[[popup text]]" target="_blank" href="[[URL link]]" class="text-dark font-weight-bolder icon-move-right">[[The text]]<i class="far fa-file-pdf text-lg ms-1"></i></a>
+-->
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKHCJQ2GTK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CKHCJQ2GTK');
+</script>
+
+  <base href="https://www.jmajhemela.eu/" target="_self">
+  <!-- <base href="file:///C:/Users/mathi/Documents/GitHub/newdesign/" target="_self"> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/fav-icon.png">
+
+  <title>
+    Atelier Voor Muziek - JheMelA
+  </title>
+
+  <!-- background image -->
+  <!-- https://images.unsplash.com/photo-1507245921392-e902673ca772 -->
+
+  <!--     Fonts and icons     -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" /> -->
+  <!-- <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Aleo:300,400,500,700,900|Aleo+Slab:400,700" /> -->
+
+  <!-- Nucleo Icons -->
+  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <!-- <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> -->
+  <!-- <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v6.1.1/css/all.css"> -->
+  <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link id="pagestyle" href="assets/css/material-kit-jma.css?v=3.0.0" rel="stylesheet" />
+
+</head>
+
+<!-- <body class="index-page bg-jma3"> -->
+<!-- <body class="index-page bg-gray-200"> -->
+<body class="index-page bg-gray-500">
+
+
+  <!-- Scroll Progress bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="myBar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-0 py-0 start-0 end-0 mx-4">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand font-weight-bolder ms-sm-3" href="./index.html" rel="tooltip"
+              title="Atelier Voor Muziek" data-placement="bottom">
+              <img class="card-img-top w-50" src="assets/img/JheMela_logo_mp.svg">
+            </a>
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+              data-bs-target="./index.html#navigation" aria-controls="navigation" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+              <ul class="navbar-nav navbar-nav-hover ms-auto">
+
+
+
+                <!-- Aanbod -->
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="material-icons opacity-6 me-2 text-md">article</i>
+                    Aanbod
+                    <img src="assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg shadow-dark"
+                    aria-labelledby="dropdownMenuDocs">
+                    <div class="d-none d-lg-block">
+                      <ul class="list-group">
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/aanbod.html#aanbod-vorming">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Muzische vorming</h6>
+                            <span class="text-sm">Vanaf 5 tot 6 jaar</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/aanbod.html#aanbod-muziekleer">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Muziek op maat</h6>
+                            <span class="text-sm">Vanaf eerste leerjaar, jongeren en volwassenen</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/aanbod.html#aanbod-instrumenten">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Instrumenten</h6>
+                            <span class="text-sm">Ontelbare mogelijkheden</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/aanbod.html#aanbod-chakra">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Chakra Sounds</h6>
+                            <span class="text-sm">Harmonie</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/aanbod.html#aanbod-projecten">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Workshops en projecten</h6>
+                            <span class="text-sm">"Never stop learning"  -Albert Einstein</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </ul>
+                </li>
+
+
+                <!-- Over ons -->
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="material-icons opacity-6 me-2 text-md">article</i>
+                    Over Ons
+                    <img src="assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg shadow-dark"
+                    aria-labelledby="dropdownMenuDocs">
+                    <div class="d-none d-lg-block">
+                      <ul class="list-group">
+                    
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/overons.html#verhaal">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Ons Verhaal</h6>
+                            <span class="text-sm">onze geschiedenis</span>
+                          </a>
+                        </li>
+
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/overons.html#doelstelling">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Doelstelling</h6>
+                            <span class="text-sm">wat willen we samen bereiken</span>
+                          </a>
+                        </li>
+
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/overons.html#aandachtspunten">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Aandachtspunten</h6>
+                            <span class="text-sm">Niet te vergeten</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/overons.html#financieel">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Financieel</h6>
+                            <span class="text-sm">zeker even lezen</span>
+                          </a>
+                        </li>
+                        
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/overons.html#galerij">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Galerij</h6>
+                            <span class="text-sm">Pictures says more than words</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </ul>
+                </li>
+
+                <!-- Nieuws -->
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="material-icons opacity-6 me-2 text-md">article</i>
+                    Nieuws
+                    <img src="assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg shadow-dark"
+                    aria-labelledby="dropdownMenuDocs">
+                    <div class="d-none d-lg-block">
+                      <ul class="list-group">
+
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/nieuws.html#laatste">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Het Laatste Nieuws</h6>
+                            <span class="text-sm">Volg dit regelmatig op!</span>
+                          </a>
+                        </li>
+
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/nieuws.html#inschrijving">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Inschrijving</h6>
+                            <span class="text-sm">Hoe? Waar? Wanneer?</span>
+                          </a>
+                        </li>
+
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/nieuws.html#kalender">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Werkjaarkalender</h6>
+                            <span class="text-sm">Zeker noteren!</span>
+                          </a>
+                        </li>
+
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/nieuws.html#covid">
+                            <h6
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Covid-19</h6>
+                            <span class="text-sm">Veilig bij ons</span>
+                          </a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </ul>
+                </li>
+
+                <!-- Facebook -->
+                <li class="nav-item ms-lg-auto">
+                  <a class="nav-link nav-link-icon me-2" href="https://www.facebook.com/ateliervoormuziekjhemela/"
+                    target="_blank">
+                    <i class="fab fa-facebook me-1"></i>
+                    <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip"
+                      data-bs-placement="bottom" title="Op Facebook">Facebook</p>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <header class="header-2">
+
+    <div class="page-header min-vh-75 relative"
+      style="background-image: url('https://images.unsplash.com/photo-1423110041833-0d5dfcc552e1')">
+      <span class="mask bg-gradient-jma1 opacity-7"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-center mx-auto">
+            <h1 class="text-white pt-3 mt-n5">Atelier Voor Muziek - JheMelA</h1>
+            <p class="lead text-white mt-3">Leer muziek bij ons in Brasschaat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content   -->
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+
+    <!-- INTRO -->
+    <section class="pt-3 pb-4" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto py-3">
+            <div class="row">
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-jma1"><a href="./index.html#aanbod">Aanbod</a></h1>
+                  <h5 class="mt-3">Dit is wat wij bieden</h5>
+                  <p class="text-sm font-weight-normal">Muzische Vorming, Muziek op maat, Instrumenten, Chakraleer, workshops en projecten.</p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-jma1"><a href="./index.html#overons">Over Ons</a></h1>
+                  <h5 class="mt-3">Achtergrondinformatie</h5>
+                  <p class="text-sm font-weight-normal">Doelstelling, aandachtspunten, financieel en galerij.
+                  </p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-jma1"><a href="./index.html#nieuws">Nieuws</a></h1>
+                  <h5 class="mt-3">Praktische informatie</h5>
+                  <p class="text-sm font-weight-normal">Pop show moment op 29 juni o.l.v. Joël Stevens. 
+                    <a title="Link naar website" target="_self" href="./pages/aanbod.html#aanbod-projecten" class="text-danger font-weight-bolder icon-move-right">Klik hier!<i class="fa-solid fa-link text-lg ms-1"></i></a>
+                    <br>Volg dit regelmatig op!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aanbod -->
+    <section class="my-5 py-5 border-dashed border-radius-xl" id="aanbod">
+
+      <div class="container mt-sm-5 mt-3">
+        <div class="row">
+
+
+          <div class="col-lg-3 bg-gradient-jma1 border-radius-xl shadow-xl">
+            <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+              <h3 class="text-white">Ons Aanbod</h3>
+              <h6 class="text-white font-weight-normal pe-3">Dit is wat wij bieden</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <!-- row 1 -->
+            <div class="row mt-3">
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="vorming">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1591776353202-aed91f04fb81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Muzische Vorming</h3>
+                        <p class="text-white opacity-8">Voor 5 jarigen (laatste kleuterklas) & 6 jarigen (eerste leerjaar dagschool).</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1577877777751-3f1ec20a0715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1613&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Muzische Vorming</h3>
+                        <p class="text-white opacity-8">Muzische Vorming is zoeken hoe we vorm gaan geven aan allerlei ervaringen. Steeds op verkenning en op ontdekking in die wondere wereld van 'zich uitdrukken' en 'indrukken opdoen'. Inzicht krijgen op de eigen identiteit.</p>
+                        <a href="./pages/aanbod.html#aanbod-vorming" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="muziekleer">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1617398745178-f40f24bbaa23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Muziek op maat</h3>
+                        <p class="text-white opacity-8">Wekelijks, individueel, 60 minuten les, met een instrument, voor jongeren en volwassenen.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1604560733003-bae94041bf33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80); background-size: cover;">
+                      <div class="card-body pt-7 text-center">
+                        <h3 class="text-white">Muziek op maat</h3>
+                        <p class="text-white opacity-8"> De cursist leert op eigen tempo, met onze eigen ontwikkelde Chakle-methode als leidraad, de theorie verkennen tijdens de instrumentles.</p>
+                        <a href="./pages/aanbod.html#aanbod-muziekleer" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer Info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- row 2 -->
+            <div class="row mt-3">
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="instrumenten">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1614618023880-533dcf86b4b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Instrumenten</h3>
+                        <p class="text-white opacity-8">Keuze uit 30 minuten, 45 of 60 minuten les. Vele mogelijkheden. Elk instrument kan besproken worden.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Instrumenten</h3>
+                        <p class="text-white opacity-8">Het Atelier wil een waardevolle opleiding uitbouwen met de meest aantrekkelijke instrumenten. We zijn niet blind voor de nieuwe vormen van muzikale expressie (YouTube, Apps enz.) met een professioneel draagvlak en een ervaren leerkracht.</p>
+                        <a href="./pages/aanbod.html#aanbod-instrumenten" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="chakra">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1502230831726-fe5549140034?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Chakra Sounds</h3>
+                        <p class="text-white opacity-8">Deze afdeling brengt ons terug in onze oerkracht door bepaalde
+                          instrumenten te gebruiken die inwerken op desbetreffende Chakra.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=799&q=80); background-size: cover;">
+                      <div class="card-body pt-7 text-center">
+                        <h3 class="text-white">Chakra Sounds</h3>
+                        <p class="text-white opacity-8">We werken met trillingen en vibraties, onze ademhaling, klanken
+                          en tonen, instrumenten, onze leefwereld, kleuren en onszelf.</p>
+                        <a href="./pages/aanbod.html#aanbod-chakra" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer Info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- end row 2 -->
+
+            <!-- row 3 -->
+            <div class="row mt-3">
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="project">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1614618023880-533dcf86b4b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Workshops en Projecten</h3>
+                        <p class="text-white opacity-8">Het Atelier organiseert elk schooljaar verschillende workshops die inspelen op de vraag van onze leerlingen of externe geïnteresseerden. Een dynamisch onderdeel binnen ons "Aanbod" onderdeel.</div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Workshops en Projecten</h3>
+                        <p class="text-white opacity-8">Ons Atelier richtte verschillende workshops en projecten in tijdens de afgelopen jaren: Djembe, Clownerie, Songwriting, Ukulele, ... Check regelmatig!</p>
+                        <a href="./pages/aanbod.html#aanbod-projecten" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- end row 3 -->
+
+          </div>
+        </div>
+      </div>
+      <!-- Welkom -->
+    </section>
+
+    <!-- Over Ons -->
+    <section class="my-5 py-5 border-dashed border-radius-xl" id="overons">
+
+
+      <div class="container mt-md-5 mt-3">
+        <div class="row">
+
+
+          <div class="col-lg-3 bg-gradient-jma1 border-radius-xl shadow-xl">
+            <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+              <h3 class="text-white">Over Ons</h3>
+              <h6 class="text-white font-weight-normal pe-3">Interessante achtergrondinformatie.</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <!-- row 1 -->
+            <div class="row mt-3">
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="doelstelling">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1640482770561-2b08fd61ff8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Doelstelling en Werking</h3>
+                        <p class="text-white opacity-8">Het Atelier voor muziek - JheMelA is een privé-initiatief, een
+                          specifieke gestructureerde vorm van jeugdwerk, een socio-culturele vereniging, waar iedereen zich muzikaal kan leren ontwikkelen en uitdrukken.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Doelstelling en Werking</h3>
+                        <p class="text-white opacity-8">Het Atelier voor muziek - JheMelA wil kinderen, jongeren en volwassenen een kwaliteitsvolle muzikale opleiding aanbieden, die aansluit bij de muzikale belevingswereld en de mogelijkheden van de cursisten met "Muziek Op Maat".</p>
+                        <a href="./pages/overons.html#doelstelling" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="aandachtspunten">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1578986568309-707ef1017f69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Aandachtspunten</h3>
+                        <p class="text-white opacity-8">Belangrijke weetjes over o.a. de inschrijving, werkjaarkalender enz.<br>Altijd het nalezen waard. <br>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body pt-7 text-center">
+                        <h3 class="text-white">Aandachtspunten</h3>
+                        <p class="text-white opacity-8">Schrijf je tijdig in voor het nieuwe werkjaar. Lesdagen blijven onder voorbehoud tot eind oktober.<br>
+                          Werkjaarkalender zelf goed in acht nemen.<br>
+                          Afbetalingssysteem te bespreken op het secretariaat. Bancontact doorlopend ter beschikking</p>
+                        <a href="./pages/overons.html#aandachtspunten" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          Info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- row 2 -->
+            <div class="row mt-3">
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="financieel">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Financieel</h3>
+                        <p class="text-white opacity-8">Enkele financiële weetjes zodat onze samenwerking duidelijk en vlot verlopen kan.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1534951009808-766178b47a4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Financieel</h3>
+                        <p class="text-white opacity-8"> Inschrijven kan online via onze website of op afspraak en vaste inschrijvingsdagen in ons Atelier (voorschot €100)<br>BANCONTACT is doorlopend ter beschikking.</p>
+                        <a href="./pages/overons.html#financieel" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="galerij">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1614618023880-533dcf86b4b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Galerij</h3>
+                        <p class="text-white opacity-8">Zoals men zegt: "A picture says more than a thousand words..."</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Galerij</h3>
+                        <p class="text-white opacity-8">Klik hier en kijk.</p>
+                        <a href="./pages/overons.html#galerij" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- end row 2 -->
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nieuws -->
+    <section class="my-5 py-5 border-dashed border-radius-xl" id="nieuws">
+
+
+      <div class="container mt-md-5 mt-3">
+        <div class="row">
+
+
+          <div class="col-lg-3 bg-gradient-jma1 border-radius-xl shadow-xl">
+            <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+              <h3 class="text-white">Nieuws</h3>
+              <h6 class="text-white font-weight-normal pe-3">Praktische informatie</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <!-- row 1 -->
+            <div class="row mt-3">
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="nieuws">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1640482770561-2b08fd61ff8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Nieuws</h3>
+                        <p class="text-white opacity-8">Lees wat er op de planning staat (workshops, inschrijvingen etc.) en andere belangrijke informatie die bij ons gebeurt.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Nieuws</h3>
+                        <p class="text-white opacity-8">Het Laatste Nieuws, volg dit regelmatig op!</p>
+                        <a href="./pages/nieuws.html#laatste" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="inschrijving">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1640482770561-2b08fd61ff8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Inschrijvingen</h3>
+                        <p class="text-white opacity-8">Online of op het Atelier, op afspraak of tijdens de vaste inschrijvingsmomenten. Vraag zeker voldoende informatie op en lees alle documenten zorgvuldig.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80); background-size: cover;">
+                      <div class="card-body pt-3 text-center">
+                        <h3 class="text-white">Inschrijvingen</h3>
+                        <p class="text-white opacity-8">Op de formulieren vragen we u om te bevestigen dat u de voorwaarden en verklaringen gelezen heeft en dat u de inhoud ervan begrijpt. Stel zeker al uw vragen als er toch nog iets niet duidelijk is.</p>
+                        <a href="./pages/nieuws.html#inschrijving" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- row 2 -->
+            <div class="row mt-3">
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="aandachtspunten">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1578986568309-707ef1017f69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Werkjaarkalender</h3>
+                        <p class="text-white opacity-8">Alle lesweken, vakanties en belangrijke andere data overzichtelijk gebundeld in 1 kalender. Handig! </p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body pt-7 text-center">
+                        <h3 class="text-white">Werkjaarkalender</h3>
+                        <p class="text-white opacity-8">Hang hem op jouw kamer of centraal op de koelkast maar deze kalender geeft je een overzicht wanneer je les hebt en wanneer niet. Verloren? Check de website.</p>
+                        <a href="./pages/nieuws.html#kalender" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer
+                          Info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 ms-auto me-auto p-lg-4 mt-lg-0 mt-4" id="covid19">
+                <div class="rotating-card-container">
+                  <div class="card card-rotate card-background card-background-mask-dark shadow-dark">
+                    <div class="front front-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1589209934789-4aacd30e8e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80); background-size: cover;">
+                      <div class="card-body py-7 text-center">
+                        <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                        <h3 class="text-white">Covid-19</h3>
+                        <p class="text-white opacity-8">We hebben het Atelier zodanig aangepast om de veiligheidsmaatregelen optimaal toe te kunnen passen.</p>
+                      </div>
+                    </div>
+                    <div class="back back-background"
+                      style="background-image: url(https://images.unsplash.com/photo-1593007791459-4b05e1158229?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); background-size: cover;">
+                      <div class="card-body pt-7 text-center">
+                        <h3 class="text-white">Covid-19</h3>
+                        <p class="text-white opacity-8">We hebben het veilig te houden voor iedereen en daarom is het belangrijk dat u deze informatie leest en ons bij mogelijke vragen even contacteert.</p>
+                        <a href="./pages/nieuws.html#covid" class="btn btn-white btn-sm w-50 mx-auto mt-3">Meer Info</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- Welkom -->
+    </section>
+
+
+  </div>
+
+
+  <!-- footer -->
+  <!-- https://www.creative-tim.com/learning-lab/bootstrap/grid/material-kit -->
+  <footer class="footer pt-4 mt-4">
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-4 mb-2 text-center">
+          <div>
+            <a href="./index.html">
+              <img src="assets/img/JheMela_logo_mp.svg" class="col-md-10 w-65 mb-2" alt="main_logo">
+            </a>
+          </div>
+          <div>
+            <ul class="d-flex flex-row nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.facebook.com/ateliervoormuziekjhemela/" target="_blank">
+                  <i class="fab fa-facebook text-lg opacity-8"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.instagram.com/ateliervoormuziek_jhemela/" target="_blank"><i class="fab fa-instagram text-lg opacity-8"></i></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4 mb-2">
+          <div>
+            <h6 class="text-sm border-bottom border-dark">Atelier Voor Muziek</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/overons.html#verhaal" target="_self">
+                  Ons Verhaal
+                </a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nieuws.html" target="_self">
+                  Nieuws
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <div>
+            <h6 class="text-sm border-bottom border-dark">Contact</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="https://www.google.com/maps/@51.2906809,4.4986454,3a,75y,225.05h,81.62t/data=!3m6!1e1!3m4!1sxR70X2kujBWqtuOpos3wzg!2e0!7i13312!8i6656?hl=en"
+                  target="_blank">
+                  Wegbeschrijving
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact-us.html" target="_self">
+                  Contact details
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nieuws.html#kalender" target="_self">
+                  Agenda
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal">
+              All rights reserved. Copyright ©
+              <script>document.write(new Date().getFullYear())</script>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+
+
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+  <script src="assets/js/plugins/countup.min.js"></script>
+
+
+  <script src="assets/js/plugins/choices.min.js"></script>
+
+
+  <script src="assets/js/plugins/prism.min.js"></script>
+  <script src="assets/js/plugins/highlight.min.js"></script>
+
+
+  <!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+  <script src="assets/js/plugins/rellax.min.js"></script>
+  <!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+  <script src="assets/js/plugins/tilt.min.js"></script>
+  <!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+  <script src="assets/js/plugins/choices.min.js"></script>
+
+
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="assets/js/plugins/parallax.min.js"></script>
+
+
+
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="assets/js/material-kit.min-jma.js?v=3.0.0" type="text/javascript"></script>
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript">
+    if (document.getElementById('state1')) {
+      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+      if (!countUp.error) {
+        countUp.start();
+      } else {
+        console.error(countUp.error);
+      }
+    }
+    if (document.getElementById('state2')) {
+      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+      if (!countUp1.error) {
+        countUp1.start();
+      } else {
+        console.error(countUp1.error);
+      }
+    }
+    if (document.getElementById('state3')) {
+      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+      if (!countUp2.error) {
+        countUp2.start();
+      } else {
+        console.error(countUp2.error);
+      };
+    }
+  </script>
+
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=2603794;
+var sc_invisible=1;
+var sc_partition=25;
+var sc_security="a77ae124";
+</script>
+
+<script type="text/javascript" language="javascript" src="https://www.statcounter.com/counter/frames.js"></script><noscript><a href="https://www.statcounter.com/" target="_blank"><img  src="https://c26.statcounter.com/counter.php?sc_project=2603794&java=0&security=a77ae124&invisible=0" alt="web metrics" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+
+
+</body>
+
+</html>
